@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<main class="container">
+  <h2>Contact Me</h2>
+  <% if (message) { %><p><%= message %></p><% } %>
+  <form action="/contact" method="POST">
+    <label>Name:</label>
+    <input type="text" name="name" required>
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <label>Message:</label>
+    <textarea name="message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</main>
+
+<%- include('partials/footer') %>
