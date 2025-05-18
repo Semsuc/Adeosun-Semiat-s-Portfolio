@@ -48,12 +48,6 @@ header p {
   line-height: 1.6;
 }
 
-nav a#home,
-nav a#portfolio,
-nav a#certifications,
-nav a#testimonies {
-  /* default styles */
-}
 
 nav a#home:hover,
 nav a#portfolio:hover,
@@ -66,7 +60,7 @@ nav a#testimonies:hover {
 
 nav a {
   color: #333333;
-  /*Defaultlinkcolor*/text-decoration: none;
+  /*Default link-color*/text-decoration: none;
   padding: 8px 15px;
   transition: color 0.3s ease, background-color 0.3s ease;
   border-radius: 4px;
