@@ -6,6 +6,9 @@ require('dotenv').config();
 
 const app = express();
 
+// serve everything in /public at the root URL
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
